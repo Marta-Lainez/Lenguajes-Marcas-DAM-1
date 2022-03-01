@@ -1,0 +1,32 @@
+
+.photo {
+  background-image: url("../images/trent-reznor.jpeg");
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 800px;
+}
+
+.top-left{
+ /* flex-grow: 1;*/
+ margin:20px;
+ width: 20%;
+ height: 20%;
+ flex: 0 0 500px; /* Le da un tamaño muy superior a este elemento */
+}
+.bottom-centered{
+  background-color: #ffffff75;
+  color:rgba(0, 0, 0, 0.671);
+  margin: 30px;
+}
+
+.news-title{
+  font-size:62px;
+  margin-left:20px;
+  margin-right:30px;
+}
+.news-resume{
+  font-size:28px;
+  margin-left:20px;
+  margin-right:100px;
+}

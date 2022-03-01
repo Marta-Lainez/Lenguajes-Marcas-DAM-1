@@ -1,0 +1,72 @@
+
+    header {
+        text-align: center;
+        background-color: rgba(255, 241, 163, 0.815);
+    }
+    main{
+        background-color: rgb(255, 218, 233);
+    }
+    footer {
+        padding: 15px;
+        background-color: rgba(255, 241, 163, 0.815);
+    }
+    #Titulo {
+        padding-left: 15px;
+        text-decoration-line: underline;
+        text-decoration-style: dotted;
+    }
+
+    #Parte1 {
+        padding-left: 25px;
+    }
+
+    #w3schools {
+        padding-left: 30px;
+    }
+
+    #Parte2 {
+        padding-left: 25px;
+    }
+
+    #Parte3 {
+        padding-left: 25px;
+    }
+
+    #CasillaNavegador {
+        /* Estas etiquetas afectan a miembros de listas, en este caso miembros de la lista navegador (id="CasillaNavegador") */
+        float: left;
+        /* Hace que las casillas salgan una al lado de la otra y a la izq de la pantalla */
+        border-right: 1px solid #bbb;
+        /* Linea gris que separa las casillas de la barra de navegacion*/
+    }
+
+    #nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* Necesario para que se separe correctamente la barra de las siguientes entradas*/
+        background-color: rgb(59, 59, 59);
+        /* Pone un fondo de barra negro*/
+        position: fixed;
+        /* IMPORTANTE!! Hace que la barra de navegacion se vea siempre aun cuando haces scroll down */
+        top: 0;
+        width: 100%;
+    }
+
+    #nav a {
+        display: block;
+        /* Añade espacio arriba y abajo de toda la barra de navegacion */
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    #nav a:hover {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .active {
+        background-color: #992db9;
+    }

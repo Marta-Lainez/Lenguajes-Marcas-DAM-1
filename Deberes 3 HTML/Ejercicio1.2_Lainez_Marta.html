@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        #Cabecera {
+            text-align: center;
+        }
+
+        #TablaPrincipal {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-column-gap: 20px;
+        }
+
+        #Titulo {
+            color: rgb(8, 8, 150);
+            font-size: 20px;
+            text-align: right;
+        }
+
+        #TituloTabla {
+            color: rgb(8, 8, 150);
+            font-size: 18px;
+            text-align: center;
+        }
+
+        #Tabla {
+            color: rgb(8, 8, 150);
+            font-size: 16px;
+            text-align: center;
+        }
+
+        #NivelIdioma {
+            text-align: center;
+        }
+
+        .LineaSeparacion {
+            align-self: center;
+        }
+
+        .Europass {
+            align-self: end;
+            /* Manda Europass al fondo de su casilla (es decir, baja lo maximo posible)*/
+        }
+
+        .FotoPerfil {
+            grid-column: 1/2;
+            /* Quiere decir que Foto perfil empieza en la linea de columna 1 y acaba e la 2, por lo que ocupa la primera columna */
+
+            grid-row: 3/7;
+            /* Quiere decir que Foto perfil empieza en la linea de fila 3 y acaba en la 7, ocupando todas las filas entre 3 y 7*/
+
+            text-align: right;
+        }
+
+        .Fecha1 {
+            grid-column: 1/2;
+            grid-row: 9/13;
+            align-self: top;
+        }
+
+        .Fecha2 {
+            grid-column: 1/2;
+            grid-row: 13/17;
+            align-self: top;
+        }
+
+        .Fecha3 {
+            grid-column: 1/2;
+            grid-row: 18/21;
+            align-self: top;
+        }
+
+        .OtrasLenguas {
+            grid-column: 1/2;
+            grid-row: 23/25;
+            align-self: top;
+        }
+
+        .Lengua {
+            grid-column: 1/2;
+            grid-row: 25/27;
+            align-self: top;
+            justify-self: end;
+            /* Mandamos el contenido de la celda a la derecha*/
+        }
+
+        .TablaIdiomas {
+            grid-column: 2/3;
+            grid-row: 23/27;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            /* Le indico que hay 5 columnas del mismo tamaño en esta tabla*/
+
+            grid-template-rows: repeat(4, 1fr);
+            /* Le indico que hay 4 filas del mismo tamaño en esta tabla*/
+
+            border: 1px solid rgb(136, 136, 136);
+            border-collapse: collapse;
+        }
+
+        .EntenderIdioma {
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+
+        .HablarIdioma {
+            grid-column: 3/5;
+            grid-row: 1/2;
+        }
+
+        .NivelIdioma {
+            grid-column: 1/6;
+            grid-row: 4/5;
+        }
+
+        .TablaIdiomas div {
+            border: 1px solid rgb(136, 136, 136);
+            border-collapse: collapse;
+        }
+
+        body {
+            padding-left: 15px;
+        }
+
+        #Pie {
+            padding-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="Cabecera">
+        <h1>Marta Lainez Ramos</h1>
+    </header>
+    <main>
+        <div id="TablaPrincipal">
+            <div class="Europass">
+                <img src="https://cdecomunidaddemadrid.files.wordpress.com/2013/10/europass-logo1.png"
+                    alt=" Europass logo" style="width:75%; height:75%;">
+            </div>
+            <div>
+                <h1 style="color:rgb(0, 183, 255); font-size:25px; text-align:left;">Curriculum Vitae</h1>
+            </div>
+            <div>
+                <h1 id="Titulo">PERSONAL INFORMATION</h1>
+            </div>
+            <div>
+                <h1 style="font-size:20px;text-align:left;">Marta Lainez Ramos</h1>
+            </div>
+            <div class="FotoPerfil">
+                <img src="https://static.wikia.nocookie.net/gossipgirl/images/7/79/Blair_Waldorf-0.jpg/revision/latest?cb=20190208044159&path-prefix=es"
+                    alt="Foto de mi" style="width:50%;height:100%;">
+            </div>
+            <div><img src="https://traigogps.com/wp-content/uploads/2017/12/cropped-icono-traigo.png"
+                    alt="Icono dirección" style="width:25px;height:25px;">Cantín y Gamboa, nº 35, 3B, Zaragoza,
+                Spain, 50002</div>
+            <div>
+                <img src="http://assets.stickpng.com/images/5a452570546ddca7e1fcbc7d.png" alt="Icono teléfono"
+                    style="width:25px;height:25px;"> +976 20 00 00 <img
+                    src="https://cdn-icons-png.flaticon.com/512/1284/1284072.png" alt="Icono móvil"
+                    style="width:25px;height:25px;"> +34 640 57 57 57
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/originals/2f/eb/50/2feb502b5f81195a353cfd2fb4df0773.png" alt="Icono mail"
+                    style="width:25px;height:25px;"> aa21.mlainez83@iespabloserrano.com
+            </div>
+            <div>
+                Sex: Female | Date of birth: 01/12/2001 | Nationality: Spain
+            </div>
+            <div>
+                <h1 id="Titulo">JOB APPLIED FOR</h1>
+            </div>
+            <div>
+                <h1 style="font-size:20px;text-align:left;">Programmer</h1>
+            </div>
+            <div>
+                <h1 id="Titulo">WORK EXPERINCE</h1>
+            </div>
+            <div class="LineaSeparacion">
+                <hr>
+            </div>
+            <div class="Fecha1">
+                <h1 id="Titulo">03/02/2020 - 03/02/2021</h1>
+            </div>
+            <div>
+                <h1 id="Titulo" style="text-align:left;">Programmer - Head</h1>
+            </div>
+            <div>
+                <p>Antonio Fernandez, Zaragoza</p>
+            </div>
+            <div>
+                <p>Responsible of the company's web and app. Head of the programming team.</p>
+            </div>
+            <div>
+                <p>Technology sector</p>
+            </div>
+            <div class="Fecha2">
+                <h1 id="Titulo">03/01/2019 - 03/12/2019</h1>
+            </div>
+            <div>
+                <h1 id="Titulo" style="text-align:left;">Programmer</h1>
+            </div>
+            <div>
+                <p>Manolo Rodruiguez, Zaragoza</p>
+            </div>
+            <div>
+                <p>Part of the company's app team.</p>
+            </div>
+            <div>
+                <p>Technology sector</p>
+            </div>
+            <div>
+                <h1 id="Titulo">EDUCATION AND TRAINING</h1>
+            </div>
+            <div class="LineaSeparacion">
+                <hr>
+            </div>
+            <div class="Fecha3">
+                <h1 id="Titulo">15/09/2018 - 06/06/2020</h1>
+            </div>
+            <div>
+                <h1 id="Titulo" style="text-align:left;">Superior degree on DAM</h1>
+            </div>
+            <div>
+                <p>Ies Pablo Serrano, Zaragoza, Spain</p>
+            </div>
+            <div>
+                <p>App and Web programming. Data Bases. English.</p>
+            </div>
+            <div>
+                <h1 id="Titulo">PERSONAL SKILLS</h1>
+            </div>
+            <div class="LineaSeparacion">
+                <hr>
+            </div>
+            <div>
+                <h1 id="Titulo">Mother tongue</h1>
+            </div>
+            <div>
+                <p>Spanish</p>
+            </div>
+
+            <div class="OtrasLenguas">
+                <h1 id="Titulo">Other languages</h1>
+            </div>
+            <div class="Lengua">
+                <p>English</p>
+            </div>
+            <div class="TablaIdiomas">
+                <div class="EntenderIdioma">
+                    <h1 id="TituloTabla">UNDERSTANDING</h1>
+                </div>
+                <div class="HablarIdioma">
+                    <h1 id="TituloTabla">SPEAKING</h1>
+                </div>
+                <div>
+                    <h1 id="TituloTabla">WRITING</h1>
+                </div>
+                <div>
+                    <h1 id="Tabla">Listening</h1>
+                </div>
+                <div>
+                    <h1 id="Tabla">Reading</h1>
+                </div>
+                <div>
+                    <h1 id="Tabla">Spoken interaction</h1>
+                </div>
+                <div>
+                    <h1 id="Tabla"> Spoken production</h1>
+                </div>
+                <div></div>
+                <div id="NivelIdioma">
+                    <p>Very High</p>
+                </div>
+                <div id="NivelIdioma">
+                    <p>Very High</p>
+                </div>
+                <div id="NivelIdioma">
+                    <p>Very High</p>
+                </div>
+                <div id="NivelIdioma">
+                    <p>Very High</p>
+                </div>
+                <div id="NivelIdioma">
+                    <p>Very High</p>
+                </div>
+                <div class="NivelIdioma">
+                    <p style="text-align:center;">C1 - Proficent User</p>
+                </div>
+            </div>
+
+            <div>
+                <h1 id="Titulo">Comunication skills</h1>
+            </div>
+            <div>
+                <p>Good comunication skills learnt through my experience at Superior programming degree</p>
+            </div>
+            <div>
+
+                <h1 id="Titulo">Organisational / managerial skills</h1>
+
+
+            </div>
+            <div>
+                <p>Leadership obtained by organizing my University and Superior egree team projects</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="Pie">
+        <p><a href=".\Ejercicio2.2_Lainez_Marta.html">Blog DAM</a></p>
+        <p><a href=".\Ejercicio3.2_Lainez_Marta.html">Blibiografía</a></p>
+    </footer>
+</body>
+
+</html>

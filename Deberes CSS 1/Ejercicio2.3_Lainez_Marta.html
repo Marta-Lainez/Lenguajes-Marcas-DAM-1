@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        header {
+            text-align: center;
+            background-color: rgba(255, 241, 163, 0.815);
+        }
+        main{
+            background-color: rgb(255, 218, 233);
+        }
+        footer {
+            padding: 15px;
+            background-color: rgba(255, 241, 163, 0.815);
+        }
+
+        #PrimerTitulo {
+            text-align: center;
+            text-decoration-line: overline;
+            text-decoration-style: dotted;
+            text-decoration-color: black;
+            text-decoration-thickness: 5px;
+
+            color: rgb(129, 22, 67);
+        }
+
+        #Titulo {
+
+            font-size: 25px;
+        }
+
+        #Fecha {
+            color: rgb(218, 79, 137);
+        }
+
+        #Parte {
+            padding-left: 20px;
+        }
+
+        #CasillaNavegador {
+            /* Estas etiquetas afectan a miembros de listas, en este caso miembros de la lista navegador (id="CasillaNavegador") */
+            float: left;
+            /* Hace que las casillas salgan una al lado de la otra y a la izq de la pantalla */
+            border-right: 1px solid #bbb;
+            /* Linea gris que separa las casillas de la barra de navegacion*/
+        }
+
+        #nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* Necesario para que se separe correctamente la barra de las siguientes entradas*/
+            background-color: rgb(59, 59, 59);
+            /* Pone un fondo de barra negro*/
+            position: fixed;
+            /* IMPORTANTE!! Hace que la barra de navegacion se vea siempre aun cuando haces scroll down */
+            top: 0;
+            width: 100%;
+        }
+
+        #nav a {
+            display: block;
+            /* Añade espacio arriba y abajo de toda la barra de navegacion */
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #nav a:hover {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .active {
+            background-color: #992db9;
+        }
+    </style>
+</head>
+
+<body>
+    <ul id="nav">
+        <li style="float:right" id="CasillaNavegador"><a class="active" href="#home">Practica HTML5-2</a></li>
+        <li id="CasillaNavegador"><a href=".\Ejercicio1.3_Lainez_Marta.html">Currículim Vitae</a></li>
+        <li id="CasillaNavegador"><a href=".\Ejercicio3.3_Lainez_Marta.html">Blibiografía</a></li>
+    </ul>
+    <header>
+        <br>
+        <h1>Marta Lainez Ramos</h1>
+    </header>
+    <main>
+        <div id="PrimerTitulo">
+            <h1><img src="https://cdn-icons-png.flaticon.com/512/616/616655.png" alt="Estrella"
+                    style="width:30px;height:30px;"> Mi blog sobre DAM <img
+                    src="https://cdn-icons-png.flaticon.com/512/616/616655.png" alt="Estrella"
+                    style="width:30px;height:30px;"></h1>
+        </div>
+        <br>
+        <div id="Parte">
+            <h2 id="Titulo"><em>Presentación</em></h2>
+            <p>Buenos días, me llamo Marta y soy una alumna de primero de DAM (desarrollo de aplicaciones
+                multiplataforma).
+            </p>
+            <p>Tengo 19 años, y acabo de salir de 2 intensos <del>y horribles</del> años en la universidad de Zaragoza,
+                donde estudiaba Ingenieria de las Telecomunicaciones.</p>
+            <p>No soy una experta en ordenadores, para nada... pero sí me interesan y quiero aprender. Y seamos
+                sinceros, si
+                ya fuera una experta, ¿para que me matricularía? Espero aprender mucho.</p>
+            <p>¡Espero que te guste mi blog! <img src="https://images.emojiterra.com/google/android-11/512px/1f60a.png"
+                    alt="Emoji sonrisa" style="width:20px;height:20px;"></p>
+            <hr>
+        </div>
+        <div id="Parte">
+            <h2 id="Titulo"><ins>Primera semana </ins><img
+                    src="https://images.vexels.com/media/users/3/157075/isolated/preview/eb08cf6199c76d2650f8e6af0b98d3f5-icono-de-dibujos-animados-de-cafe-de-accion-de-gracias.png"
+                    alt="Café" style="width:40px;height:40px;"></h2>
+            <p id="Fecha"><em><strong>15/9/2021</strong></em></p>
+            <p>El primer dia he conocido a Vanessa, Samuel, Eric y Ionut. Parecen todos muy majos. En el recreo estamos
+                yendo a un bar super barato que está al lado del instituto. Nos tomamos un café y nos vamos conociendo
+                poco
+                a poco.</p>
+            <P>También he conocido a casi todos mis profesores, y han presentado casi todas las asignaturas. Tengo
+                suerte de
+                venir de la uni. Me ayudará con algunas asignaturas como <em>programación</em>.</P>
+            <p>Me encanta que las asignaturas sean tan prácticas. Creo que voy a aprender muchísimo.</p>
+            <p>La semana que viene preguntaré sobre los Erasmus porque me encantaría ir a USA a hacer las prácticas,
+                sería
+                maravilloso...</p>
+            <hr>
+        </div>
+        <div id="Parte">
+            <h2 id="Titulo"><ins>Segunda semana </ins><img
+                    src="https://images.vexels.com/media/users/3/157295/isolated/preview/5ab1a21aaafa93397c0d6eedcb24731e-icono-de-computadora-portatil.png"
+                    alt="PC" style="width:40px;height:40px;"></h2>
+            <p id="Fecha"><em><strong>22/9/2021</strong></em></p>
+            <p>Segunda semana... aun me estoy acostumbrando a madrugar.</p>
+            <p>Cómo no, he conocido a muchos más compañeros de clase, y ya sé quien va conmigo al módulo bilingue de
+                <em>Bases de datos</em>. También he conocido a mi tutor, que me da clase de <em>lenguajes de marcas</em>
+                y
+                <em>Bases de datos Bilingüe</em>. Con eso ya he conocido a todos mis profesores, y pronto tendré que
+                empezar
+                a estudiar y hacer trabajos.
+            </p>
+            <p>Resulta que nuestro profesor de <em>entornos</em> es el encargado de los Erasmus. Nos ha dicho que nos
+                darán
+                una charla informativa el año que viene.</p>
+            <p><strong>Deberes de esta semana:</strong></p>
+            <ul>
+                <li>Investigar sobre <a href="https://www.scribbr.es/detector-de-plagio/generador-apa/">APA</a></li>
+                <li>Empezar el trabajo de <em>Bases de datos</em> con Samuel</li>
+                <li>Repasar <em>programación</em> de la uni</li>
+                <li>Aprender HTML con <a href="https://www.w3schools.com/default.asp">w3schools</a></li>
+                <li>Aprender a utilizar la página <a href="https://app.diagrams.net/">draw.io</a> para crear diagramas
+                </li>
+            </ul>
+            <hr>
+        </div>
+        <div id="Parte">
+            <h2 id="Titulo"><ins>Tercera semana </ins><img src="https://cdn-icons-png.flaticon.com/512/732/732397.png"
+                    alt="Libro" style="width:40px;height:40px;"></h2>
+            <p id="Fecha"><em><strong>29/9/2021</strong></em></p>
+            <p>Siento que estoy aprendiendo muchas cosas útiles. He empezado a crear páginas web, y aunque me cuesta
+                aprender desde cero, me lo paso bien y se pasa el tiempo volando.</p>
+            <p>Me pregunto si los examenes tendrán un nivel de dificultad similar a lo que damos en clase, espero que
+                sí.
+                Quiero sacar las mejores notas que pueda para irme de Erasmus.</p>
+            <p>Hemos pasado de ser cinco en el recreo a ser mas de diez, es una pasada. Hemos quedado por la tarde para
+                tomarnos algo, dar una vuelta y cenar.</p>
+            <p>¡A ver que nos depara la semana que viene!</p>
+        </div>
+        <br>
+    </main>
+
+    <footer>
+        <p>Muchas gracias.</p>
+    </footer>
+</body>
+
+</html>
